@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+        <style>
+        @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+        </style>
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/custom.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <link href="/c3/c3.css" rel="stylesheet" type="text/css">
+        <script src="/c3/d3.min.js"></script>
+        <script src="/c3/c3.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/intro.jpg"></section>
+				<section class="slide starwars">
+
+                    <p class="starwars-intro">A year ago, on a campus about 8 hours away...</p>
+
+                    <h1>PRINTER<br /><sub>The Quota Awakens</sub>WARS</h1>
+                      <div class="starwars-scroll">
+                          <div class="starwars-scroll-content">
+                              <p>
+                                  It's a time of uncertainty. Unrest ripples through the campus community as department directors battle budgetary challenges which are forcing them to reevaluate service offerings and consider changes to processes put in place long ago. Front facing services like computer labs and printing which have historically been integral parts of the student learning experience and statisfaction have managed to remain largely unchanged...until now.
+                              </p>
+                              <p>
+                                  The long standing quota system which gave students a weekly alotment of 240 pages has drawn critism from students and staff alike. Now a few rebillious staff members from across IT and the Student Government are coming together to discuss the future of printing.
+                              </p>
+                          </div>
+                    </div>
+                </section>
+                <section data-background="images/sbu.jpg">
+                    <div style="background-color: rgba(0,0,0,0.7);width:100%;padding: 2em;box-sizing: border-box;">
+                        <h2 style="float:right">About Stony Brook</h2>
+                        <br style="clear:both" />
+                        <div style="text-align: left;">
+                            Long Island, NY<br />
+                            25,272 Students; 16,000 Undergrads<br />
+                            200+ Undergrad Programs<br />
+                            140+ Graduate Programs<br />
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <section data-background="images/stakeholders.jpg">
+                        Identifying Our Stakeholders
+
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        User Support Team
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Systems Team
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Faculty
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Students
+                    </section>
+
+
+                    </section>
+                </section>
+
+
+                                <section>
+
+                                    <section data-background="images/stakeholders.jpg">
+                                        Timeline
+
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Fall 2001 - Unmetered print usage of about 3 Million Pages
+
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Spring 2005 - 9 Million Pages printed in Spring; 1 student printed 1500 in 3 days.
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Fall 2008 - Print From Anywhere
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Fall 2013 - Omega Release Stations; First “Printer Kiosk” Installed in Commuter Lounge
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Fall 2014 - Residence Halls Folded In & Kiosk Printers Expanded
+                                    </section>
+                                    <section data-background="images/starsbg.jpg">
+                                        Fall 2015 - Print Quota Set to Semesterly Ration of 1500 pages
+                                    </section>
+
+
+                                    </section>
+                                </section>
+
+                <section>
+                    Community Breakdown
+                    <div id="chart--community-breakdown"></div>
+                    <script src="data/community-breakdown.js"></script>
+
+                </section>
+
+                <section>
+                    Enrollment vs Transactions
+                    <div id="chart--enrollment-transactions"></div>
+                    <script src="data/enrollment-v-transactions.js"></script>
+
+                </section>
+
+                <section>
+                    Enrollment vs Transactions
+                    <div id="chart--job-size"></div>
+                    <script src="data/job-size.js"></script>
+
+                </section>
+                <section>
+                    Single vs Double Sided Printing
+                    <div id="chart--single-double"></div>
+                    <script src="data/single-double.js"></script>
+
+                </section>
+
+                <section>
+                    Number of Printers
+                    <div id="chart--number-printers"></div>
+                    <script src="data/number-printers.js"></script>
+
+                </section>
+
+                <section>
+                    Job Types<br />
+                    <a onclick="loadFall();">Fall 2015</a>
+                    <a onclick="loadSpring();">Spring 2016</a>
+                    <div id="chart--job-types"></div>
+                    <script src="data/job-types.js"></script>
+
+                </section>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+                minScale: 1,
+                maxScale: 1,
+                margin: 1,
+                width: 1600,
+                height: 900,
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
