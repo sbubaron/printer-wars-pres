@@ -33,14 +33,17 @@ var chart = c3.generate({
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
     },
     legend: {
+        show: false,
         position: 'right'
     },
     donut: {
        label: {
            format: function (value, ratio, id) {
                return id + " " + d3.format(',')(value);
-           }
-       }
+           },
+        },
+        title: "DONUT TITLE"
+
    }
 });
 

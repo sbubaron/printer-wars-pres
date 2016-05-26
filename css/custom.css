@@ -62,6 +62,11 @@ path.domain, .c3 path, .c3 line {
      font-size: 12px;
  }
 
+ .c3-chart-arcs-title
+ {
+   fill: white;
+ }
+
  @media (min-width: 600px) {
   .c3-legend-item text {
     font-size: 24px;
