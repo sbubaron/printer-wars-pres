@@ -2,9 +2,8 @@
 var chart = c3.generate({
 
     bindto: '#chart--number-printers',
-    size: {
-        width: 1500,
-        height: 700
+    size:{
+      height: 700
     },
     padding: {
         top: 40,
@@ -48,7 +47,7 @@ var chart = c3.generate({
 
     grid: {
        x: {
-           show: true
+           show: false
        },
        y: {
           show: true
@@ -65,10 +64,5 @@ var chart = c3.generate({
             type: 'category'
         }
 
-    },
-    grid: {
-        y: {
-            lines: [{value:0}]
-        }
     }
 });

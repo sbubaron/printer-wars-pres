@@ -2,16 +2,16 @@
 var chart = c3.generate({
 
     bindto: '#chart--community-breakdown',
-    size: {
-        width: 1500,
-        height: 700
+    size:{
+      height: 700
     },
     padding: {
         top: 40,
-        right: 100,
+        right: 80,
         bottom: 40,
         left: 100,
     },
+
     tooltip: {
         contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
 

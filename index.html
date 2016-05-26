@@ -11,13 +11,14 @@
 		<link rel="stylesheet" href="css/reveal.css">
 
 		<link rel="stylesheet" href="css/theme/black.css">
-        <link rel="stylesheet" href="css/custom.css">
+
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
         <link href="/c3/c3.css" rel="stylesheet" type="text/css">
         <script src="/c3/d3.min.js"></script>
         <script src="/c3/c3.js"></script>
 
+				    <link rel="stylesheet" href="css/custom.css">
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -118,34 +119,45 @@
 
                 <section>
                     Community Breakdown
-                    <div id="chart--community-breakdown"></div>
+										  <div class="chart-wrap">
+												<div id="chart--community-breakdown">
+												</div>
+											</div>
                     <script src="data/community-breakdown.js"></script>
 
                 </section>
 
                 <section>
                     Enrollment vs Transactions
-                    <div id="chart--enrollment-transactions"></div>
+                    <div class="chart-wrap">
+											<div id="chart--enrollment-transactions"></div>
+										</div>
                     <script src="data/enrollment-v-transactions.js"></script>
 
                 </section>
 
                 <section>
                     Enrollment vs Transactions
-                    <div id="chart--job-size"></div>
+                      <div class="chart-wrap">
+												<div id="chart--job-size"></div>
+											</div>
                     <script src="data/job-size.js"></script>
 
                 </section>
                 <section>
                     Single vs Double Sided Printing
-                    <div id="chart--single-double"></div>
+                      <div class="chart-wrap">
+												<div id="chart--single-double"></div>
+											</div>
                     <script src="data/single-double.js"></script>
 
                 </section>
 
                 <section>
                     Number of Printers
-                    <div id="chart--number-printers"></div>
+                      <div class="chart-wrap">
+												<div id="chart--number-printers"></div>
+											</div>
                     <script src="data/number-printers.js"></script>
 
                 </section>
@@ -154,7 +166,9 @@
                     Job Types<br />
                     <a onclick="loadFall();">Fall 2015</a>
                     <a onclick="loadSpring();">Spring 2016</a>
-                    <div id="chart--job-types"></div>
+                      <div class="chart-wrap">
+												<div id="chart--job-types"></div>
+											</div>
                     <script src="data/job-types.js"></script>
 
                 </section>
@@ -165,12 +179,15 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
-                minScale: 1,
-                maxScale: 1,
-                margin: 1,
-                width: 1600,
-                height: 900,
+
+								history: true,
+				                minScale: 1,
+				                maxScale: 1,
+				                margin: 0,
+												width: '100%',
+				 								height: '100%',
+
+
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
@@ -179,6 +196,11 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				window.dispatchEvent(new Event('resize'));
+				console.log("Resized");
+			} );
 		</script>
 	</body>
 </html>

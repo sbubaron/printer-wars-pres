@@ -1,4 +1,15 @@
 
+.chart-wrap
+{
+  background-color: #000;
+  box-sizing: border-box;
+  padding:0;
+  margin:0 auto !important;
+  width: 1200px;
+
+
+}
+
 
 
 /*
@@ -36,7 +47,7 @@ path.domain, .c3 path, .c3 line {
 
     fill: white;
 
-    font-size: 24px;
+    font-size: 16px;
 }
 
  .c3-legend-item text
@@ -44,7 +55,7 @@ path.domain, .c3 path, .c3 line {
 
      fill: white;
 
-     font-size: 16px;
+     font-size: 12px;
  }
 
 .c3-xgrid-line line
@@ -57,11 +68,6 @@ path.domain, .c3 path, .c3 line {
     stroke: white;
 }
 
-
-#chart{
-    color: #fff;
-    width: 100%;
-}
 
 
 .slide.starwars{

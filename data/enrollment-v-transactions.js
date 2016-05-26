@@ -1,38 +1,23 @@
 
-var chart = c3.generate({
+var enrollment = c3.generate({
 
-    bindto: '#chart--enrollment-transactions',
-    size: {
-        width: 1500,
-        height: 700
+    bindto: d3.select('#chart--enrollment-transactions'),
+    //bindto: '#chart--enrollment-transactions',
+    size:{
+      height: 700
     },
     padding: {
         top: 40,
-        right: 100,
+        right: 140,
         bottom: 40,
         left: 100,
     },
-    tooltip: {
-        contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-
-
-        var sum = 0;
-        d.forEach(function (e) {
-            sum += e.value
-        })
-        defaultTitleFormat = function () {
-            return "Total: " + sum;
-        };
-        return c3.chart.internal.fn.getTooltipContent.apply(this, arguments);
-    }
-
-  },
 
     data: {
          x: 'x',
 
         columns: [
-            ['x', 'Fall 2011', 'Spring 2012', 'Fall 2012', 'Spring 2013', 'Fall 2013', 'Spring 2014', 'Fall 2014', 'Spring 2015', 'Fall 2015', 'Spring 2016'],
+            ['x', 'F 11', 'S 12', 'Fall 2012', 'Spring 2013', 'Fall 2013', 'Spring 2014', 'Fall 2014', 'Spring 2015', 'Fall 2015', 'Spring 2016'],
             ['Students', 24197, 22530, 24933, 22862, 25440, 22930, 26431, 23535, 26679, 23845],
             ['Transactions', 1098237, 1099744, 1233154, 1366119, 1456606, 1349081, 1320084, 1166265, 1178827, 1122660],
             ['Pages', 7980174, 8186817, 9941178, 12101467, 12888408, 12152598, 10172953, 9254708, 9578678, 9600917],
@@ -57,7 +42,7 @@ var chart = c3.generate({
     },
     grid: {
         x: {
-            show: true
+            show: false
         },
         y: {
             show: true
@@ -72,11 +57,6 @@ var chart = c3.generate({
         },
         y2: {
             show: true
-        }
-    },
-    grid: {
-        y: {
-            lines: [{value:0}]
         }
     }
 });
