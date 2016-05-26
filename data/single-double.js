@@ -67,6 +67,12 @@ var chart = c3.generate({
     axis: {
         x: {
             type: 'category'
+        },
+        y: {
+          tick: {
+                format: d3.format(",")
+//              format: function (d) { return (d / 1000000) + ""; }
+          }
         }
 
     }

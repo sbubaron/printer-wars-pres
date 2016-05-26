@@ -16,23 +16,32 @@ var chart = c3.generate({
             ["PDF", 473321],
             ["Web", 308095],
             ["Word", 277686],
-            ["PowerPoint", 80306],
-            ["Google Doc", 26467],
-            ["Images", 21490],
-            ["Excel", 9480],
-            ["Text", 2374],
-            ["Office", 5442],
-            ["Code", 333],
-            ["Other", 8388]
+            ["PPT", 80306],
+
+            ["Other", 73974]
+            //["Google Doc", 26467],
+            //["Images", 21490],
+            //["Excel", 9480],
+            //["Text", 2374],
+            //["Office", 5442],
+            //["Code", 333],
+            //["Other", 8388]
         ],
         type : 'donut',
         onclick: function (d, i) { console.log("onclick", d, i); },
         onmouseover: function (d, i) { console.log("onmouseover", d, i); },
         onmouseout: function (d, i) { console.log("onmouseout", d, i); }
     },
+    legend: {
+        position: 'right'
+    },
     donut: {
-        title: "Iris Petal Width"
-    }
+       label: {
+           format: function (value, ratio, id) {
+               return id + " " + d3.format(',')(value);
+           }
+       }
+   }
 });
 
 /*
@@ -53,17 +62,19 @@ function loadFall() {
         chart.load({
             columns: [
 
-                ["PDF", 473321],
-                ["Web", 308095],
-                ["Word", 277686],
-                ["PowerPoint", 80306],
-                ["Google Doc", 26467],
-                ["Images", 21490],
-                ["Excel", 9480],
-                ["Text", 2374],
-                ["Office", 5442],
-                ["Code", 333],
-                ["Other", 8388]
+              ["PDF", 473321],
+              ["Web", 308095],
+              ["Word", 277686],
+              ["PPT", 80306],
+
+              ["Other", 73974]
+              //["Google Doc", 26467],
+              //["Images", 21490],
+              //["Excel", 9480],
+              //["Text", 2374],
+              //["Office", 5442],
+              //["Code", 333],
+              //["Other", 8388]
             ]
         });
 
@@ -79,14 +90,15 @@ function loadSpring() {
                 ["PDF", 346255],
                 ["Web", 358695],
                 ["Word", 276244],
-                ["PowerPoint", 93791],
-                ["Google Doc", 26686],
-                ["Images", 21337],
-                ["Excel", 8730],
-                ["Text", 2631],
-                ["Office", 5817],
-                ["Code", 1007],
-                ["Other", 9146]
+                ["PPT", 93791],
+                ["Other", 75354]
+                //["Google Doc", 26686],
+                //["Images", 21337],
+                //["Excel", 8730],
+                //["Text", 2631],
+                //["Office", 5817],
+                //["Code", 1007],
+                //["Other", 9146]
             ]
         });
 

@@ -8,9 +8,9 @@ var enrollment = c3.generate({
     },
     padding: {
         top: 40,
-        right: 140,
+        right: 100,
         bottom: 40,
-        left: 100,
+        left: 60,
     },
 
     data: {
@@ -45,7 +45,7 @@ var enrollment = c3.generate({
             show: false
         },
         y: {
-            show: true
+            show: false
         }
     },
     color: {
@@ -56,7 +56,12 @@ var enrollment = c3.generate({
             type: 'category'
         },
         y2: {
-            show: true
+            show: true,
+            //label: 'Transactions in Millions',
+            tick: {
+//                format: d3.format("$,")
+                format: function (d) { return (d / 1000000) + "M"; }
+            }
         }
     }
 });
