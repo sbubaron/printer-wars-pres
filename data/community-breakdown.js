@@ -1,9 +1,9 @@
 
-var chart = c3.generate({
+var communityChart = c3.generate({
 
     bindto: '#chart--community-breakdown',
     size:{
-      height: 300
+      height: 600
     },
     padding: {
         top: 40,

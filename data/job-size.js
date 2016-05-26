@@ -1,5 +1,5 @@
 
-var chart = c3.generate({
+var jobSizeChart = c3.generate({
 
     bindto: '#chart--job-size',
     size:{
@@ -57,6 +57,17 @@ var chart = c3.generate({
         types: {
 
         },
+
+        labels: {
+            format: {
+               //Normal: d3.format(',')
+               Normal: function (v, id, i, j) {
+
+                //   d3.format(",");
+               }
+           }
+         },
+
         type: 'bar',
         groups: [
             ['Normal', 'XXS', 'XS', 'Small', 'Medium', 'Large', 'XL', 'XXL']

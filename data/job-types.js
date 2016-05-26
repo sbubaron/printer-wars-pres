@@ -1,4 +1,4 @@
-var chart = c3.generate({
+var jobTypeChart = c3.generate({
     bindto: '#chart--job-types',
     size:{
       height: 700
@@ -60,9 +60,9 @@ setTimeout(function () {
 
 function loadFall() {
 
-        chart.unload(true);
+        jobTypeChart.unload(true);
 
-        chart.load({
+        jobTypeChart.load({
             columns: [
 
               ["PDF", 473321],
@@ -85,9 +85,9 @@ function loadFall() {
 
 function loadSpring() {
 
-        chart.unload(true);
+        jobTypeChart.unload(true);
 
-        chart.load({
+        jobTypeChart.load({
             columns: [
 
                 ["PDF", 346255],

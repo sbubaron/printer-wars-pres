@@ -1,5 +1,5 @@
 
-var chart = c3.generate({
+var numPrintersChart = c3.generate({
 
     bindto: '#chart--number-printers',
     size:{

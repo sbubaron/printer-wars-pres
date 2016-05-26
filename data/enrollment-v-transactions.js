@@ -1,5 +1,5 @@
 
-var enrollment = c3.generate({
+var enrollmentChart = c3.generate({
 
     bindto: d3.select('#chart--enrollment-transactions'),
     //bindto: '#chart--enrollment-transactions',

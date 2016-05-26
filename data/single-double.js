@@ -1,5 +1,5 @@
 
-var chart = c3.generate({
+var singleDoublePrintingChart = c3.generate({
 
     bindto: '#chart--single-double',
     size:{

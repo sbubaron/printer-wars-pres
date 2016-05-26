@@ -32,8 +32,21 @@ body, html
   font-family: "Droid Sans", arial, verdana, sans-serif;
 
 }
+
+#chart--heat svg {
+    height: 100%;
+    min-height: 600px;
+}
 .c3-tooltip-container table{
     color: #000;
+}
+
+#chart--heat .labels.segment text{
+    fill: white;
+}
+
+#chart--heat .labels.radial text{
+    fill: black;
 }
 
 path.domain, .c3 path, .c3 line {

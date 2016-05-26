@@ -1,0 +1,19 @@
+/* SVG styling */
+#chart--heat path {
+	stroke: #777;
+	stroke-width: 0.1px;
+}
+
+#chart--heat .labels {
+	fill: #aaa;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+#chart--heat .labels.segment {
+	font-size: 10px;
+}
+
+
+#chart--heat svg {
+	width: 960px;
+}

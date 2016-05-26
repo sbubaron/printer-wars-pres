@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Printer Wars -- The Quota Awakens</title>
         <style>
         @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
         </style>
@@ -15,8 +15,10 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
         <link href="c3/c3.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/heat.svg.css">
         <script src="c3/d3.min.js"></script>
         <script src="c3/c3.js"></script>
+        <script src="c3/heat.circularHeatChart.js"></script>
 
 				    <link rel="stylesheet" href="css/custom.css">
 		<!-- Printing and PDF exports -->
@@ -34,21 +36,146 @@
 				<section data-background="images/intro.jpg"></section>
 				<section class="slide starwars">
 
-                    <p class="starwars-intro">A year ago, on a campus about 8 hours away...</p>
+                    <p class="starwars-intro">A little over two years ago, on a campus about 8 hours away...</p>
 
                     <h1>PRINTER<br /><sub>The Quota Awakens</sub>WARS</h1>
                       <div class="starwars-scroll">
                           <div class="starwars-scroll-content">
                               <p>
-                                  It's a time of uncertainty. Unrest ripples through the campus community as department directors battle budgetary challenges which are forcing them to reevaluate service offerings and consider changes to processes put in place long ago. Front facing services like computer labs and printing which have historically been integral parts of the student learning experience and statisfaction have managed to remain largely unchanged...until now.
+                                  It's a time of uncertainty. Unrest ripples through the campus community as department directors battle budgetary challenges which are forcing them to reevaluate service offerings and consider changes to processes put in place long ago. Front facing services like computer labs and printing which have historically been viewed as integral parts of the student learning experience and statisfaction have managed to remain largely unchanged...until now.
                               </p>
                               <p>
-                                  The long standing quota system which gave students a weekly alotment of 240 pages has drawn critism from students and staff alike. Now a few rebillious staff members from across IT and the Student Government are coming together to discuss the future of printing.
+                                  The long standing quota system which gave students a weekly alotment of 280 pages has drawn critism from students and staff alike. A few rebillious staff members from across IT are working together and with various community groups and the Student Government to discuss the future of printing.
                               </p>
                           </div>
                     </div>
                 </section>
-                <section data-background="images/sbu.jpg">
+                <section>
+                    <section data-background="images/starsbg.jpg">
+                        Some Background
+                    </section>
+
+                    <section data-background="">
+                        Who are we?<br />
+
+                        Diana Voss<br />
+
+                        Richard von Rauchhaupt<br />
+                        Web Strategist, Solutions Architect and Data Nerd<br />
+                    </section>
+
+                    <section data-background="images/onlyhope.gif">
+                    <p>
+                        The idea for this presentation started back in December when I was asked to analyze some printer usage stats following a change to the quota policy
+                        that reduced the amount of quota given, but allocated it all in a lump sum.
+                    </p>
+
+                    </section>
+
+                    <section>
+                        <h2>Why not just use the<br /> Standard Pharos Reports?</h2>
+                        <img src="images/pharos-report-sample.png" />
+
+                        <p>
+                            The pharos reports, provide a good base level, but they are very static, and require a sys admin to go in and run them. They are also very data heavy and not visual.
+
+                        </p>
+                    </section>
+
+
+
+                    <section>
+                        <h2>
+                            The Quest for DATA
+                        </h2>
+
+                        <img src="images/data-startrek.gif" /> <br />
+
+                        <p>
+                            I already had some familiarity with the Pharos Database, having done some basic analysis on who was using and how much they were using quota.
+                        </p>
+                        <p>
+                            So I gave myself a few days to reacquiant myself, update some previously written scripts and get to work analyzing the data.
+                        </p>
+
+                    </section>
+
+                    <section data-background="images/blackhole.gif">
+                        <p>
+                            This proved to be a blackhole, I was hooked, the more queries I wrote, the more I wanted to write.
+                        </p>
+                        <p>
+                                Any data nerds in the house?
+                        </p>
+
+                    </section>
+
+                    <section>
+                        <img src="images/rich-report.png" />
+                        <p>
+                            After that week was over, I had successfully reversed engineered most of the high level reports, and got the data into excel so I could begin modeling it, the end result was a short executive report outlining the minor decline in printing over the same period the previous year.
+                        </p>
+
+                    </section>
+                </section>
+
+
+
+                <section>
+
+                    <section data-background="images/starsbg.jpg">
+                        Important Milestones
+
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2001 - Unmetered print usage of about 3 Million Pages
+
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Spring 2005 - 9 Million Pages printed in Spring; 1 student printed 1500 in 3 days.
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2005 - Pharos Quota System Rolled Out. Quota Set at 40 Pages/Day
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2008 - Print From Anywhere Support
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        December 2012 - Health Science Center and Residences Move Onto System.
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2013 - Omega Release Stations; First “Printer Kiosk” Installed in Commuter Lounge
+                    </section>
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2014 - Quota Unified and Set to 140 pages / week.
+                    </section>
+
+                    <section data-background="images/starsbg.jpg">
+                        Fall 2015 - Print Quota Set to Semesterly Ration of 1500 pages
+                    </section>
+
+                    <section data-background="images/starsbg.jpg">
+                        Current Tech Stack:
+                        <ul>
+                            <li>
+                                Pharos v9.0 MobilePrint 2.0
+                            </li>
+                            <li>
+                                XEROX Phaser 5500 and 5550’s
+                            </li>
+                            <li>
+                                Pharos Omega PS200
+                            </li>
+                        </ul>
+                    </section>
+
+
+                    </section>
+                </section>
+
+
+
+                <!--<section data-background="images/sbu.jpg">
                     <div style="background-color: rgba(0,0,0,0.7);width:100%;padding: 2em;box-sizing: border-box;">
                         <h2 style="float:right">About Stony Brook</h2>
                         <br style="clear:both" />
@@ -61,7 +188,7 @@
 
                     </div>
 
-                </section>
+                </section>-->
 
                 <section>
 
@@ -70,11 +197,12 @@
 
                     </section>
                     <section data-background="images/starsbg.jpg">
-                        User Support Team
+                        Teaching, Learning + Technology
                     </section>
                     <section data-background="images/starsbg.jpg">
-                        Systems Team
+                        Desktop Engineering
                     </section>
+
                     <section data-background="images/starsbg.jpg">
                         Faculty
                     </section>
@@ -82,96 +210,203 @@
                         Students
                     </section>
 
+                    <section>
+                        Student Breakdown
+                                              <div class="chart-wrap">
+                                                    <div id="chart--community-breakdown">
+                                                    </div>
+                                                </div>
+                        <script src="data/community-breakdown.js"></script>
+
+                    </section>
+
+                    <section>
+                        Student Standing Breakdown<br />
+                        <a onclick="loadGraduate();">Grad Deep Dive</a> |
+                        <a onclick="loadUndergraduate();">UG Deep Drive</a> |
+                        <a onclick="loadHighLevel();">High Level</a>
+
+                                              <div class="chart-wrap">
+                                                    <div id="chart--standing-breakdown">
+                                                    </div>
+                                                </div>
+                        <script src="data/standing-breakdown.js"></script>
+
+                    </section>
+
+
 
                     </section>
                 </section>
 
-
-                                <section>
-
-                                    <section data-background="images/stakeholders.jpg">
-                                        Timeline
-
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Fall 2001 - Unmetered print usage of about 3 Million Pages
-
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Spring 2005 - 9 Million Pages printed in Spring; 1 student printed 1500 in 3 days.
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Fall 2008 - Print From Anywhere
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Fall 2013 - Omega Release Stations; First “Printer Kiosk” Installed in Commuter Lounge
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Fall 2014 - Residence Halls Folded In & Kiosk Printers Expanded
-                                    </section>
-                                    <section data-background="images/starsbg.jpg">
-                                        Fall 2015 - Print Quota Set to Semesterly Ration of 1500 pages
-                                    </section>
-
-
-                                    </section>
-                                </section>
-
                 <section>
-                    Community Breakdown
-										  <div class="chart-wrap">
-												<div id="chart--community-breakdown">
-												</div>
-											</div>
-                    <script src="data/community-breakdown.js"></script>
+                    <section>
+                        Making the Case for change
+                    </section>
+                    <section>
+                        Listening
+                    </section>
+                    <section>
+                        <h2>Student Feedback</h2>
+                        <ul>
+                            <li>
+                                    Too much quota. Sustainability issues, budget allocation sensitivity
+                            </li>
+                            <li>
+                                    Not enough quota. I pay tech fee I’m going to print ALL THE THINGS
+                            </li>
+                            <li>
+                                Lines are too long
+                            </li>
+                            <li>
+                                Want more printers / More Access to printers
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                        <h2>Staff Feedback</h2>
+                        <ul>
+                            <li>
+                                    An important service that we want to offer
+                            </li>
+                            <li>
+                                    Costly both in materials (ink, paper, parts) and staff time
+                            </li>
+                            <li>
+                                    Storage issues (where do we put all this paper / supplies)
+                            </li>
+                            <li>
+                                Difficult to forecast budget needs.
+                            </li>
+                    </ul>
+
+                    </section>
+
+                    <section>
+                        <h2>Fear of change / hesitation to experiment</h2>
+                        <ul>
+                            <li>
+                                The system works, why upset it?
+                            </li>
+                            <li>
+                                    We don’t want students printing books
+                            </li>
+                            <li>
+                                What happens if a student blows through their quota in the first week of school?
+                            </li>
+                            <li>
+                                Lines are going to get longer at beginning of school year
+                            </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+                        Communication
+                    </section>
+
+                    <section>
+                        Chart Showing Usage of Old Quota
+                    </section>
+
 
                 </section>
 
                 <section>
-                    Enrollment vs Transactions
-                    <div class="chart-wrap">
-											<div id="chart--enrollment-transactions"></div>
-										</div>
-                    <script src="data/enrollment-v-transactions.js"></script>
+                    <section>
+                        Outcomes
+                    </section>
+
+                    <section>
+                        Support for Mobile Printing
+                    </section>
+
+                    <section>
+                        Costs
+
+                        $107,995 = 16.1 Million Pages == $0.0067/Page
+                        $0.00595 / Page overage
+                        5000 Sheets (Box of Paper) = $27.24 = 0.0054/Sheet
+                        2 Single Sided = 0.0067 + 0.0067+0.0054 + 0.0054 = 0.0242/page
+                        1 Double Sided = 0.0067 + 0.0067 + 0.0054 = 0.0188/page
+
+                    </section>
+
+                    <section>
+                        Enrollment vs Transactions
+                        <div class="chart-wrap">
+                                                <div id="chart--enrollment-transactions"></div>
+                                            </div>
+                        <script src="data/enrollment-v-transactions.js"></script>
+
+                    </section>
+
+                    <section>
+                        Job Size Comparison
+                          <div class="chart-wrap">
+                                                    <div id="chart--job-size"></div>
+                                                </div>
+                        <script src="data/job-size.js"></script>
+
+                    </section>
+                    <section>
+                        Single vs Double Sided Printing
+                          <div class="chart-wrap">
+                                                    <div id="chart--single-double"></div>
+                                                </div>
+                        <script src="data/single-double.js"></script>
+
+                    </section>
+
+                    <section>
+                        Number of Printers
+                          <div class="chart-wrap">
+                                                    <div id="chart--number-printers"></div>
+                                                </div>
+                        <script src="data/number-printers.js"></script>
+
+                    </section>
+
+                    <section>
+                        Job Types<br />
+                        <a onclick="loadFall();">Fall 2015</a>
+                        <a onclick="loadSpring();">Spring 2016</a>
+                          <div class="chart-wrap">
+                                                    <div id="chart--job-types"></div>
+                                                </div>
+                        <script src="data/job-types.js"></script>
+
+                    </section>
+
+
+                                    <section>
+                                        Fall 2015 Day/Time Usage Breakdown<br />
+
+                                        <div class="chart-wrap">
+                                                                  <div id="chart--heat"></div>
+                                                              </div>
+
+                                        <script src="data/heatmap.js"></script>
+
+                                    </section>
+
 
                 </section>
 
                 <section>
-                    Enrollment vs Transactions
-                      <div class="chart-wrap">
-												<div id="chart--job-size"></div>
-											</div>
-                    <script src="data/job-size.js"></script>
-
-                </section>
-                <section>
-                    Single vs Double Sided Printing
-                      <div class="chart-wrap">
-												<div id="chart--single-double"></div>
-											</div>
-                    <script src="data/single-double.js"></script>
+                    <section>
+                        Discussion
+                    </section>
 
                 </section>
 
-                <section>
-                    Number of Printers
-                      <div class="chart-wrap">
-												<div id="chart--number-printers"></div>
-											</div>
-                    <script src="data/number-printers.js"></script>
 
-                </section>
 
-                <section>
-                    Job Types<br />
-                    <a onclick="loadFall();">Fall 2015</a>
-                    <a onclick="loadSpring();">Spring 2016</a>
-                      <div class="chart-wrap">
-												<div id="chart--job-types"></div>
-											</div>
-                    <script src="data/job-types.js"></script>
 
-                </section>
+
+
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
