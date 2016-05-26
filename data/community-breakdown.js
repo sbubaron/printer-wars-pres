@@ -3,7 +3,7 @@ var chart = c3.generate({
 
     bindto: '#chart--community-breakdown',
     size:{
-      height: 700
+      height: 300
     },
     padding: {
         top: 40,

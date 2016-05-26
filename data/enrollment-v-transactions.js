@@ -4,7 +4,7 @@ var enrollment = c3.generate({
     bindto: d3.select('#chart--enrollment-transactions'),
     //bindto: '#chart--enrollment-transactions',
     size:{
-      height: 700
+      height: 400
     },
     padding: {
         top: 40,

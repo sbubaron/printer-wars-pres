@@ -3,7 +3,7 @@ var chart = c3.generate({
 
     bindto: '#chart--job-size',
     size:{
-      height: 700
+      height: 500
     },
     padding: {
         top: 40,
