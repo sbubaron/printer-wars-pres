@@ -80,10 +80,10 @@
                     </section>
 
                     <section data-background="images/onlyhope.gif">
-                    <p>
+                    <aside class="notes">
                         The idea for this presentation started back in December when I was asked to analyze some printer usage stats following a change to the quota policy
                         that reduced the amount of quota given, but allocated it all in a lump sum.
-                    </p>
+                    </aside>
 
                     </section>
 
@@ -91,10 +91,10 @@
                         <h2>Why not just use the<br /> Standard Pharos Reports?</h2>
                         <img src="images/pharos-report-sample.png" />
 
-                        <p>
+                        <aside class="notes">
                             The pharos reports, provide a good base level, but they are very static, and require a sys admin to go in and run them. They are also very data heavy and not visual.
 
-                        </p>
+                        </aside>
                     </section>
 
 
@@ -106,16 +106,13 @@
 
                         <img src="images/data-startrek.gif" /> <br />
 
+                        <aside class="notes">
                         <p>
                             I already had some familiarity with the Pharos Database, having done some basic analysis on who was using and how much they were using quota.
                         </p>
                         <p>
                             So I gave myself a few days to reacquiant myself, update some previously written scripts and get to work analyzing the data.
                         </p>
-
-                    </section>
-
-                    <section data-background="images/blackhole.gif">
                         <p>
                             This proved to be a blackhole, I was hooked, the more queries I wrote, the more I wanted to write.
                         </p>
@@ -123,13 +120,16 @@
                                 Any data nerds in the house?
                         </p>
 
+                        </aside>
                     </section>
 
                     <section>
                         <img src="images/rich-report.png" />
-                        <p>
+                        <aside class="notes">
                             After that week was over, I had successfully reversed engineered most of the high level reports, and got the data into excel so I could begin modeling it, the end result was a short executive report outlining the minor decline in printing over the same period the previous year.
-                        </p>
+                        </aside>
+
+                        
 
                     </section>
 
@@ -225,7 +225,7 @@
                     <section data-background="images/starsbg.jpg">
                         <h2>Faculty</h2>
                     </section>
-                    <section data-background="images/starsbg.jpg">
+                    <section data-background="images/stormtroopers.jpg">
                         <h2>Students</h2>
                     </section>
 
@@ -253,10 +253,14 @@
 
                     </section>
 
+                    <section data-background="images/cantina.jpg">
+
+                    </section>
+
 
 
                     </section>
-                </section>
+
 
                 <section>
                     <section data-background="images/yoda-future.gif">
@@ -340,7 +344,7 @@
                     <section data-background="images/starsbg.jpg">
                         <h2>Page Pack Contract Cost</h2>
 
-
+                        $
                         $107,995 for 16.1 Million Pages = $0.0067/Page <br />
                         Overage Charge: $0.00595 / Page<br />
 
@@ -359,19 +363,26 @@
                         <h2>Labor Costs</h2>
 
                         $22,000 Student Labor<br />
-                        ~$200,000 in Staff Time<br />
-
-                        = 0.017/Sheet
+                        ~$78,000 in Staff Time<br />
+                        ~1.27M Sheets / Year
+                        = 0.0078/Sheet
 
                     </section>
 
                     <section data-backgroun="images/starsbg.jpg">
                         <h2>Total Per Sheet Costs</h2>
-                        1 Single Sided = 0.0067 + 0.0054 + 0.017 = <strong style="color: yellow;">0.0291/page</strong><br />
-                        1 Double Sided = 0.0067 + 0.0067 + 0.0054 + 0.017 = <strong style="color: yellow;">0.0358/page</strong><br />
-                        2 Single Sided = 2 * 0.0291 = <strong style="color: yellow;">0.0582/2xPages</strong> <br />
+                        1 Single Sided = 0.0067 + 0.0054 + 0.0078 = <strong style="color: yellow;">0.0199/sheet</strong><br />
+                        1 Double Sided = 0.0067 + 0.0067 + 0.0054 + 0.0078 = <strong style="color: yellow;">0.0266/sheet</strong><br />
+                        2 Single Sided = 2 * 0.0291 = <strong style="color: yellow;">0.0398/2xSheet</strong> <br />
                     </section>
 
+                    <section>
+                        <h2>Total Cost Fall 2014-2015</h2>
+                        <h3>$0.0199 * 5,761,960 = $114,663.004</h3>
+                        <h3>$0.0266 * 7,125,606 = $189,541.12</h3>
+                        <h2 style="color:yellow">$304,204.12</h2>
+
+                    </section>
 
 
 
@@ -449,6 +460,16 @@
 
                     </section>
 
+                                <section>
+                                    Fall 2015 Day Breakdown<br />
+
+                                    <div class="chart-wrap">
+                                                              <div id="chart--2015-day-breakdown"></div>
+                                                          </div>
+
+                                    <script src="data/2015-day-breakdown.js"></script>
+
+                                </section>
 
                                     <section>
                                         Fall 2015 Day/Time Usage Breakdown<br />
@@ -459,6 +480,13 @@
 
                                         <script src="data/heatmap.js"></script>
 
+                                    </section>
+
+
+
+                                    <section>
+                                        <h2>Subjects in Job Names</h2>
+                                        <img style="border:0" src="images/fall15-subjects-wordle.png" />
                                     </section>
 
 
