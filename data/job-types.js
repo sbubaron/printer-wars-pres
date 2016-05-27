@@ -42,7 +42,6 @@ var jobTypeChart = c3.generate({
                return id + " " + d3.format(',')(value);
            },
         },
-        title: "DONUT TITLE"
 
    }
 });
