@@ -227,7 +227,7 @@ path.domain, .c3 path, .c3 line {
 	width: 100%;
 	height: 50em;
 	bottom: 0;
-
+  color: yellow;
 	margin-left: -9em;
 	font-size: 56px;
 	text-align: justify;
@@ -270,11 +270,11 @@ path.domain, .c3 path, .c3 line {
 {
 	position: absolute;
 	top: 100%;
-	-webkit-animation: scroll 250s linear 4s infinite;
-	-moz-animation: scroll 250s linear 4s infinite;
-	-ms-animation: scroll 250s linear 4s infinite;
-	-o-animation: scroll 250s linear 4s infinite;
-	animation: scroll 250s linear 4s infinite;
+	-webkit-animation: scroll 250s linear 2s infinite;
+	-moz-animation: scroll 250s linear 2s infinite;
+	-ms-animation: scroll 250s linear 2s infinite;
+	-o-animation: scroll 250s linear 2s infinite;
+	animation: scroll 250s linear 2s infinite;
 }
 
 /* animation */
