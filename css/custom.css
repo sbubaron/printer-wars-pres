@@ -232,8 +232,10 @@ path.domain, .c3 path, .c3 line {
 	height: 50em;
 	bottom: 0;
   color: yellow;
-	margin-left: -9em;
-	font-size: 56px;
+  margin-top: 20em;
+	font-size: 72px !important;
+
+  margin-left: -9em;
 	text-align: justify;
 	overflow: hidden;
 	-webkit-transform-origin: 50% 100%;
@@ -274,11 +276,11 @@ path.domain, .c3 path, .c3 line {
 {
 	position: absolute;
 	top: 100%;
-	-webkit-animation: scroll 250s linear 2s infinite;
-	-moz-animation: scroll 250s linear 2s infinite;
-	-ms-animation: scroll 250s linear 2s infinite;
-	-o-animation: scroll 250s linear 2s infinite;
-	animation: scroll 250s linear 2s infinite;
+	-webkit-animation: scroll 250s linear 0.5s infinite;
+	-moz-animation: scroll 250s linear 0.5s infinite;
+	-ms-animation: scroll 250s linear 0.5s infinite;
+	-o-animation: scroll 250s linear 0.5s infinite;
+	animation: scroll 250s linear 0.5s infinite;
 }
 
 /* animation */
